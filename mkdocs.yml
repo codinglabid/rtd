@@ -1,0 +1,44 @@
+site_name: Codinglab.id
+site_url: https://muhammadansorinasution-rtd.readthedocs.io/en/latest/
+repo_url: https://github.com/MuhammadAnsoriNasution/rtd
+nav:
+  - Home: "index.md"
+  - "Services":
+      - "Whatsapp":
+          - "Whatsapp Web Js": "services/whatsapp/whatsapp-web-js.md"
+      - "Login With":
+          - "Facebook": "services/login-with/facebook.md"
+          - "Google": "services/login-with/google.md"
+  - "Yii2":
+      - "Installation": "yii2/installation.md"
+      - "Testing": "yii2/testing.md"
+      - "Send Message Whatsapp Web Service": "yii2/send-message-whatsapp-web-js-service.md"
+      - "Oauth2": "yii2/oauth2.md"
+      - "Avoiding XSS": "yii2/avoiding-xss.md"
+      - "Upload File use temporary php": "yii2/upload-file-use temporary php.md"
+
+  - "React":
+      - "Index": "react/index.md"
+  - "React Native":
+      - "Index": "reactnative/index.md"
+  - "Flutter":
+      - "Cek Koneksi Internet": "flutter/cek_koneksi.md"
+  - "Express Js":
+      - "Index": "express/index.md"
+  #     - "User Guide21":
+  #         - "user-guide/getting-started2.md"
+  #         - "user-guide/configuration-options2.md"
+  #     - "User Guide22":
+  #         - "user-guide/getting-started3.md"
+  #         - "user-guide/configuration-options3.md"
+
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - python
+# markdown_extensions:
+#   - toc:
+#       permalink: "#"
+#       baselevel: 2
+#       separator: "_"
