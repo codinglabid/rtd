@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://muhammadansorinasution-rtd.readthedocs.io/en/latest/services/login-with/facebook/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Facebook - Codinglab.id</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Facebook";
+        var mkdocs_page_input_path = "services/login-with/facebook.md";
+        var mkdocs_page_url = "/en/latest/services/login-with/facebook/";
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/python.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Codinglab.id
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Services</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">Whatsapp</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../whatsapp/whatsapp-web-js/">Whatsapp Web Js</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Login With</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Facebook</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#verifikasi-token">Verifikasi token</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../google/">Google</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Yii2</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../yii2/installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../yii2/testing/">Testing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../yii2/send-message-whatsapp-web-js-service/">Send Message Whatsapp Web Service</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../yii2/oauth2/">Oauth2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../yii2/avoiding-xss/">Avoiding XSS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../yii2/upload-file-use%20temporary%20php/">Upload File use temporary php</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">React</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../react/">Index</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">React Native</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reactnative/">Index</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Flutter</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../flutter/cek_koneksi/">Cek Koneksi Internet</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Express Js</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../express/">Index</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Codinglab.id</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Services &raquo;</li>
+          <li>Login With &raquo;</li><li>Facebook</li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/MuhammadAnsoriNasution/rtd/edit/master/docs/services/login-with/facebook.md"
+          class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="login-with-facebook">Login with facebook</h1>
+<p>untuk dokumentasi login dengan facebook bisa di lihat di <a href="https://developers.facebook.com/docs/facebook-login/web">https://developers.facebook.com/docs/facebook-login/web</a></p>
+<h2 id="verifikasi-token">Verifikasi token</h2>
+<pre><code class="language-php">$curl = curl_init();
+curl_setopt($curl, CURLOPT_URL,  'https://graph.facebook.com/me?fields=email&amp;access_token=' . input token);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+$output = json_decode(curl_exec($curl));
+curl_close($curl);
+
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../whatsapp/whatsapp-web-js/" class="btn btn-neutral float-left" title="Whatsapp Web Js"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../google/" class="btn btn-neutral float-right" title="Google">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/MuhammadAnsoriNasution/rtd" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../../whatsapp/whatsapp-web-js/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../google/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

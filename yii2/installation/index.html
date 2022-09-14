@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://muhammadansorinasution-rtd.readthedocs.io/en/latest/yii2/installation/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Installation - Codinglab.id</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Installation";
+        var mkdocs_page_input_path = "yii2/installation.md";
+        var mkdocs_page_url = "/en/latest/yii2/installation/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/python.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Codinglab.id
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Services</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Whatsapp</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../services/whatsapp/whatsapp-web-js/">Whatsapp Web Js</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Login With</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../services/login-with/facebook/">Facebook</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../services/login-with/google/">Google</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Yii2</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Installation</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#setup-vhost">Setup vhost</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#init-project">Init Project</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#htaccess">htaccess</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pretty-url">Pretty Url</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#kebutuhan-library-dasar">kebutuhan library dasar</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../testing/">Testing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../send-message-whatsapp-web-js-service/">Send Message Whatsapp Web Service</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../oauth2/">Oauth2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avoiding-xss/">Avoiding XSS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../upload-file-use%20temporary%20php/">Upload File use temporary php</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">React</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../react/">Index</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">React Native</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../reactnative/">Index</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Flutter</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../flutter/cek_koneksi/">Cek Koneksi Internet</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Express Js</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../express/">Index</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Codinglab.id</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Yii2 &raquo;</li><li>Installation</li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/MuhammadAnsoriNasution/rtd/edit/master/docs/yii2/installation.md"
+          class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="installation">Installation</h1>
+<p>install yii2 advanced</p>
+<pre><code class="language-bash">  composer create-project --prefer-dist yiisoft/yii2-app-advanced nama_project
+</code></pre>
+<h2 id="setup-vhost">Setup vhost</h2>
+<p>buka file vhost, untuk mac ada di <code>/usr/local/etc/httpd/extra/httpd-vhost.conf</code>
+lalu tambahkan</p>
+<pre><code class="language-bash">&lt;VirtualHost *:80&gt;
+  DocumentRoot &quot;/Users/muhammadansorinasution/Sites/nama_project&quot;
+  ServerName nama_project.test
+&lt;/VirtualHost&gt;
+</code></pre>
+<p>untuk <code>/Users/muhammadansorinasution/Sites/</code> sesuaikan dengan path masing masing.
+langkah selanjutnya buka file <code>/private/etc/hosts</code> pada mac lalu tambahkan <code>127.0.0.1 nama_project.test</code>
+kemudian restart apache.</p>
+<h2 id="init-project">Init Project</h2>
+<p>buka project menggunakan editor seperti vscode, pada contoh ini kita menggunakan vscode.
+buka terminal lalu jalankan cli berikut:</p>
+<ul>
+<li>php init</li>
+<li>pilih mode develop atau production</li>
+</ul>
+<h2 id="htaccess">htaccess</h2>
+<p>buat file di root project <code>.htaccess</code>
+tambahkan ini pada file tersebut</p>
+<pre><code class="language-htaccess">Options +FollowSymlinks
+RewriteEngine On
+
+# ===================== admin =====================
+RewriteCond %{REQUEST_URI} ^/(admin)
+RewriteRule ^admin/assets/(.*)$ backend/web/assets/$1 [L]
+RewriteRule ^admin/css/(.*)$ backend/web/css/$1 [L]
+RewriteRule ^admin/images/(.*)$ backend/web/images/$1 [L]
+RewriteRule ^admin/js/(.*)$ backend/web/js/$1 [L]
+RewriteRule ^admin/fonts/(.*)$ frontend/web/fonts/$1 [L]
+RewriteRule ^admin/icon/(.*)$ frontend/web/icon/$1 [L]
+
+RewriteCond %{REQUEST_URI} !^/backend/web/(assets|css|images|js|fonts|icon)/
+RewriteCond %{REQUEST_URI} ^/(admin)
+RewriteRule ^.*$ backend/web/index.php [L]
+# ===================== end admin =====================
+
+# ===================== frontend =====================
+RewriteCond %{REQUEST_URI} ^/(assets|css)
+RewriteRule ^assets/(.*)$ frontend/web/assets/$1 [L]
+RewriteRule ^css/(.*)$ frontend/web/css/$1 [L]
+RewriteRule ^js/(.*)$ frontend/web/js/$1 [L]
+RewriteRule ^images/(.*)$ frontend/web/images/$1 [L]
+RewriteRule ^fonts/(.*)$ frontend/web/fonts/$1 [L]
+RewriteRule ^icon/(.*)$ frontend/web/icon/$1 [L]
+
+RewriteCond %{REQUEST_URI} !^/(frontend|backend)/web/(assets|css|images|js|fonts|icon)/
+RewriteCond %{REQUEST_URI} !index.php
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ frontend/web/index.php
+
+# ===================== end frontend =====================
+</code></pre>
+<p>Note: setiap penambahan modul ataupun app pada project maka lakukan penambahan pada .htaccess sesuai dengan modul yang dibuat</p>
+<h2 id="pretty-url">Pretty Url</h2>
+<p>buka file <code>nama_app/config/main.php</code> lalu cari urlManager dan uncomment.
+langka selanjutnya kita akan membuat file <code>Request.php</code> pada folder <code>commmon/components</code>
+lalu tambahkan kode berikut:</p>
+<pre><code class="language-php">&lt;?php
+
+namespace common\components;
+
+class Request extends \yii\web\Request {
+    public $web;
+    public $adminUrl;
+
+    public function getBaseUrl(){
+        return str_replace($this-&gt;web, &quot;&quot;, parent::getBaseUrl()) . $this-&gt;adminUrl;
+    }
+    public function resolvePathInfo(){
+        if($this-&gt;getUrl() === $this-&gt;adminUrl){
+            return &quot;&quot;;
+        }else{
+            return parent::resolvePathInfo();
+        }
+    }
+}
+</code></pre>
+<p>buka kembali file <code>nama_app/config/main.php</code> modifikasi request yang ada</p>
+<pre><code class="language-php">[
+  ...
+  'components' =&gt; [
+    ...
+     'request' =&gt; [
+            'csrfParam' =&gt; '_csrf-frontend',
+            'class' =&gt; 'common\components\Request',
+            'web'=&gt; '/frontend/web',
+            // 'adminUrl' =&gt; '/admin' // untuk adminUrl harap di perhatikan biasanya ini di aktifkan selain daripada app landing
+      ],
+    ...
+  ]
+]
+</code></pre>
+<h2 id="kebutuhan-library-dasar">kebutuhan library dasar</h2>
+<ul>
+<li><a href="https://github.com/mdmsoft/yii2-admin">https://github.com/mdmsoft/yii2-admin</a></li>
+<li><a href="https://github.com/johnitvn/yii2-ajaxcrud">https://github.com/johnitvn/yii2-ajaxcrud</a></li>
+<li><a href="https://github.com/mdmsoft/yii2-upload-file">https://github.com/mdmsoft/yii2-upload-file</a></li>
+<li><a href="https://demos.krajee.com/widget-details/datepicker">https://demos.krajee.com/widget-details/datepicker</a></li>
+<li><a href="https://demos.krajee.com/number">https://demos.krajee.com/number</a></li>
+<li><a href="https://demos.krajee.com/widget-details/select2">https://demos.krajee.com/widget-details/select2</a></li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../services/login-with/google/" class="btn btn-neutral float-left" title="Google"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../testing/" class="btn btn-neutral float-right" title="Testing">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/MuhammadAnsoriNasution/rtd" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../../services/login-with/google/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../testing/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

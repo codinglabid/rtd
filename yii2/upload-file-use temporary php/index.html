@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://muhammadansorinasution-rtd.readthedocs.io/en/latest/yii2/upload-file-use%20temporary%20php/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Upload File use temporary php - Codinglab.id</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Upload File use temporary php";
+        var mkdocs_page_input_path = "yii2/upload-file-use temporary php.md";
+        var mkdocs_page_url = "/en/latest/yii2/upload-file-use%20temporary%20php/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/python.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Codinglab.id
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Services</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Whatsapp</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../services/whatsapp/whatsapp-web-js/">Whatsapp Web Js</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Login With</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../services/login-with/facebook/">Facebook</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../services/login-with/google/">Google</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Yii2</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../testing/">Testing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../send-message-whatsapp-web-js-service/">Send Message Whatsapp Web Service</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../oauth2/">Oauth2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avoiding-xss/">Avoiding XSS</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Upload File use temporary php</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#usageexamples">Usage/Examples</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">React</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../react/">Index</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">React Native</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../reactnative/">Index</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Flutter</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../flutter/cek_koneksi/">Cek Koneksi Internet</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Express Js</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../express/">Index</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Codinglab.id</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Yii2 &raquo;</li><li>Upload File use temporary php</li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/MuhammadAnsoriNasution/rtd/edit/master/docs/yii2/upload-file-use temporary php.md"
+          class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="upload-file-use-temporary-php">Upload File use temporary php</h1>
+<p>Pada jaman dahulu ketika kita memiliki 2 buah server dimana server a yang berfungsi untuk menghandle upload dari user, sementara server b adalah tempat penyimpanan file sebenarnya. pada contoh dulu kita akan membuat temporary sendiri pada project di common <code>temp</code> lalu kita akan melakukan file save as ke dalam folder tersebut, lalu ketika file berhasil di upload atau gagak upload ke server b kita juga akan melakukan unlink secara manual. untuk sekarang kita bisa memnfaatkan langsung temporary yang sudah otomatis di buat oleh method getInstance.</p>
+<h2 id="usageexamples">Usage/Examples</h2>
+<p>server A</p>
+<pre><code class="language-php">$file = UploadedFile::getInstance($model, 'file');
+$client = new Client();
+$token = Yii::$app-&gt;api-&gt;token();
+$baseUrl = Yii::$app-&gt;params['api']['baseUrl'];
+$response = $client-&gt;createRequest()
+    -&gt;setMethod('POST')
+    -&gt;setUrl($baseUrl)
+    -&gt;setData([
+        'name' =&gt; $file-&gt;name,
+        'extension' =&gt; $file-&gt;extension
+    ])
+    -&gt;addFile('imageFile', $file-&gt;tempName)//lokaso temporary yang di buat secara otomatis oleh getInstance
+    -&gt;addHeaders([
+        'Authorization' =&gt; &quot;Bearer $token&quot;
+    ])
+    -&gt;send();
+</code></pre>
+<p>server B
+untuk handling upload file disini kita menggunakan model dari mdm</p>
+<pre><code class="language-php">$model = new Test();
+$post = Yii::$app-&gt;request-&gt;post();
+$file = UploadedFile::getInstanceByName('imageFile');
+$file-&gt;name = $post['name'];
+$FileModel = FileModel::saveAs($file,['uploadPath' =&gt; '@common/upload/']);
+
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../avoiding-xss/" class="btn btn-neutral float-left" title="Avoiding XSS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../react/" class="btn btn-neutral float-right" title="Index">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/MuhammadAnsoriNasution/rtd" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../avoiding-xss/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../react/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

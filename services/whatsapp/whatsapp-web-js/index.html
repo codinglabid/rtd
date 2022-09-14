@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://muhammadansorinasution-rtd.readthedocs.io/en/latest/services/whatsapp/whatsapp-web-js/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Whatsapp Web Js - Codinglab.id</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Whatsapp Web Js";
+        var mkdocs_page_input_path = "services/whatsapp/whatsapp-web-js.md";
+        var mkdocs_page_url = "/en/latest/services/whatsapp/whatsapp-web-js/";
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/python.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Codinglab.id
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Services</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Whatsapp</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Whatsapp Web Js</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#preinstall">Preinstall</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#installation">Installation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#syntax">Syntax</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#appjs">app.js</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#indexhtml">index.html</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#penggunaan">Penggunaan</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#api-reference">API Reference</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#send-message">Send Message</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reference">Reference</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#deployment-vps">Deployment VPS</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Login With</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../login-with/facebook/">Facebook</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../login-with/google/">Google</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Yii2</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../yii2/installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../yii2/testing/">Testing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../yii2/send-message-whatsapp-web-js-service/">Send Message Whatsapp Web Service</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../yii2/oauth2/">Oauth2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../yii2/avoiding-xss/">Avoiding XSS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../yii2/upload-file-use%20temporary%20php/">Upload File use temporary php</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">React</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../react/">Index</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">React Native</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reactnative/">Index</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Flutter</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../flutter/cek_koneksi/">Cek Koneksi Internet</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Express Js</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../express/">Index</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Codinglab.id</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Services &raquo;</li>
+          <li>Whatsapp &raquo;</li><li>Whatsapp Web Js</li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/MuhammadAnsoriNasution/rtd/edit/master/docs/services/whatsapp/whatsapp-web-js.md"
+          class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="whatsapp-web-js">Whatsapp Web js</h1>
+<p>Whatsapp web js ialah suatu library yang memungkinkan kita untuk membuat sebuah bot Whatsapp. Whatsapp web ini berjalan menggunakan <a href="https://pptr.dev/">puppeter</a> yang memungkinkan kita merunning browser lewat syntax dan kita bisa mengontrolnya lewat syntax, defaultnya menggunakan chromium. hingga dokumentasi ini ditulis library ini running menggunakan node js.</p>
+<h2 id="preinstall">Preinstall</h2>
+<p>pastikan node js sudah terinstall pada komputer yang di gunakan, jika belum silahkan download pada <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a> pilih sesuai os yang di gunakan, download dan lakukan installasi</p>
+<h2 id="installation">Installation</h2>
+<p>langkah pertama silhkan buat folder whatsapp, masuk ke dalam folder whatsapp kemudian jalankan perintah <code>npm init</code> enter sampai proses selesai. sekarang kita install dependencies nya dengan menjalankan perintah <code>npm install express express-validator nodemon qrcode socket.io whatsapp-web.js</code></p>
+<h2 id="syntax">Syntax</h2>
+<h4 id="appjs">app.js</h4>
+<pre><code class="language-javascript">const { Client, LocalAuth } = require(&quot;whatsapp-web.js&quot;);
+const express = require(&quot;express&quot;);
+const { body, validationResult } = require(&quot;express-validator&quot;);
+
+const qrcode = require(&quot;qrcode&quot;);
+const http = require(&quot;http&quot;);
+const { phoneNumberFormatter } = require(&quot;./helpers/formatter&quot;);
+
+const app = express();
+const { Server } = require(&quot;socket.io&quot;);
+const server = http.createServer(app);
+const io = new Server(server);
+
+const port = process.env.PORT || 8000;
+
+app.use(express.json());
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+);
+
+app.get(&quot;/&quot;, (req, res) =&gt; {
+  res.sendFile(&quot;index.html&quot;, {
+    root: __dirname,
+  });
+});
+
+const client = new Client({
+  restartOnAuthFail: true,
+  puppeteer: {
+    headless: true,
+    args: [
+      &quot;--no-sandbox&quot;,
+      &quot;--disable-setuid-sandbox&quot;,
+      &quot;--disable-dev-shm-usage&quot;,
+      &quot;--disable-accelerated-2d-canvas&quot;,
+      &quot;--no-first-run&quot;,
+      &quot;--no-zygote&quot;,
+      &quot;--single-process&quot;, // &lt;- this one doesn't works in Windows
+      &quot;--disable-gpu&quot;,
+    ],
+  },
+  authStrategy: new LocalAuth(),
+});
+
+client.initialize();
+
+io.on(&quot;connection&quot;, function (socket) {
+  console.log(&quot;connection&quot;);
+  socket.emit(&quot;message&quot;, &quot;Connecting...&quot;);
+
+  client.on(&quot;qr&quot;, (qr) =&gt; {
+    console.log(&quot;QR RECEIVED&quot;, qr);
+    qrcode.toDataURL(qr, (err, url) =&gt; {
+      socket.emit(&quot;qr&quot;, url);
+      socket.emit(&quot;message&quot;, &quot;QR Code received, scan please!&quot;);
+    });
+  });
+
+  client.on(&quot;ready&quot;, () =&gt; {
+    console.log(&quot;ready&quot;);
+    socket.emit(&quot;ready&quot;, &quot;Whatsapp is ready!&quot;);
+    socket.emit(&quot;message&quot;, &quot;Whatsapp is ready!&quot;);
+  });
+
+  client.on(&quot;authenticated&quot;, () =&gt; {
+    socket.emit(&quot;authenticated&quot;, &quot;Whatsapp is authenticated!&quot;);
+    socket.emit(&quot;message&quot;, &quot;Whatsapp is authenticated!&quot;);
+    console.log(&quot;AUTHENTICATED&quot;);
+  });
+
+  client.on(&quot;auth_failure&quot;, function (session) {
+    console.log(&quot;auth_failure&quot;);
+    socket.emit(&quot;message&quot;, &quot;Auth failure, restarting...&quot;);
+  });
+
+  client.on(&quot;disconnected&quot;, (reason) =&gt; {
+    console.log(&quot;disconnected&quot;);
+    socket.emit(&quot;message&quot;, &quot;Whatsapp is disconnected!&quot;);
+    client.destroy();
+    client.initialize();
+  });
+});
+
+const checkRegisteredNumber = async function (number) {
+  const isRegistered = await client.isRegisteredUser(number);
+  return isRegistered;
+};
+
+// Send message
+app.post(
+  &quot;/send-message&quot;,
+  [body(&quot;number&quot;).notEmpty(), body(&quot;message&quot;).notEmpty()],
+  async (req, res) =&gt; {
+    const errors = validationResult(req).formatWith(({ msg }) =&gt; {
+      return msg;
+    });
+
+    if (!errors.isEmpty()) {
+      return res.status(422).json({
+        status: false,
+        message: errors.mapped(),
+      });
+    }
+
+    const number = phoneNumberFormatter(req.body.number);
+    const message = req.body.message;
+
+    const isRegisteredNumber = await checkRegisteredNumber(number);
+
+    if (!isRegisteredNumber) {
+      return res.status(422).json({
+        status: false,
+        message: &quot;The number is not registered&quot;,
+      });
+    }
+
+    client
+      .sendMessage(number, message)
+      .then((response) =&gt; {
+        res.status(200).json({
+          status: true,
+          response: response,
+        });
+      })
+      .catch((err) =&gt; {
+        res.status(500).json({
+          status: false,
+          response: err,
+        });
+      });
+  }
+);
+
+server.listen(port, function () {
+  console.log(&quot;App running on *: &quot; + port);
+});
+</code></pre>
+<h4 id="indexhtml">index.html</h4>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+
+    &lt;style&gt;
+      .hide {
+        display: none;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;app&quot;&gt;
+      &lt;img src=&quot;&quot; alt=&quot;QR Code&quot; id=&quot;qrcode&quot; class=&quot;hide&quot; /&gt;
+      &lt;h3&gt;Logs:&lt;/h3&gt;
+      &lt;ul class=&quot;logs&quot;&gt;&lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;script
+      src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js&quot;
+      crossorigin=&quot;anonymous&quot;
+    &gt;&lt;/script&gt;
+    &lt;script src=&quot;/socket.io/socket.io.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+
+    &lt;script&gt;
+      $(document).ready(function () {
+        var socket = io();
+
+        socket.on(&quot;message&quot;, function (msg) {
+          $(&quot;.logs&quot;).append($(&quot;&lt;li&gt;&quot;).text(msg));
+        });
+
+        socket.on(&quot;qr&quot;, function (src) {
+          $(&quot;#qrcode&quot;).attr(&quot;src&quot;, src);
+          $(&quot;#qrcode&quot;).show();
+        });
+
+        socket.on(&quot;ready&quot;, function (data) {
+          $(&quot;#qrcode&quot;).hide();
+        });
+
+        socket.on(&quot;authenticated&quot;, function (data) {
+          $(&quot;#qrcode&quot;).hide();
+        });
+      });
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h2 id="penggunaan">Penggunaan</h2>
+<p>untuk menjalankannya silahkan jalankan perintah <code>nodemon app.js</code> kemudian buka <code>http://localhost:8000</code> pada browser</p>
+<p>tunggu beberapa saat hingga barcode muncul, setelah barcode muncul scan barcode tersebut dengan akun Whatsapp, mausk dari tautkan perangkat. ketika scan berhasil silahkan tunggu hingga status ready, dan Api pun siap di gunakan</p>
+<h2 id="api-reference">API Reference</h2>
+<h4 id="send-message">Send Message</h4>
+<pre><code class="language-http">  POST /send-message
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="left">Body</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>number</code></td>
+<td align="left"><code>number</code></td>
+<td align="left"><strong>Required</strong>. Your number</td>
+</tr>
+<tr>
+<td align="left"><code>message</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><strong>Required</strong>. Your message</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="left">Headers</th>
+<th align="left">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>Content-Type</code></td>
+<td align="left"><code>application/json</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://github.com/pedroslopez/whatsapp-web.js/">https://github.com/pedroslopez/whatsapp-web.js/</a></li>
+<li><a href="https://github.com/ngekoding/whatsapp-api-tutorial">https://github.com/ngekoding/whatsapp-api-tutorial</a></li>
+<li><a href="https://socket.io/">https://socket.io/</a></li>
+<li><a href="https://expressjs.com/">https://expressjs.com/</a></li>
+</ul>
+<h2 id="deployment-vps">Deployment VPS</h2>
+<p>untuk melakukan deploy node js silahkan install <a href="https://pm2.keymetrics.io/">https://pm2.keymetrics.io/</a> pada pvs yang ada. setelah pm2 berhasil di install clone source yang telah di buat tadi pada github terkait dan masuk ke dalam folder hasil clone tadi. jalankan perintah <code>pm2 start app.js --name==wa --watch</code> dan aplikasipun siap di gunakan pada port 8000 sesuai dengan yang kita buat pada app.js dan pastikan port tersebut sudah di buka pada firewall</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../.." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../login-with/facebook/" class="btn btn-neutral float-right" title="Facebook">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/MuhammadAnsoriNasution/rtd" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../login-with/facebook/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
