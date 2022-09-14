@@ -1,6 +1,6 @@
 site_name: Codinglab.id
-site_url: https://muhammadansorinasution-rtd.readthedocs.io/en/latest/
-repo_url: https://github.com/MuhammadAnsoriNasution/rtd
+site_url: https://codinglabid.github.io
+repo_url: https://github.com/codinglabid/rtd
 nav:
   - Home: "index.md"
   - "Services":
